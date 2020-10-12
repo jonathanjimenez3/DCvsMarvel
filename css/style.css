@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbar > a{
+    display: flex;
+    align-items: center;
+}
+
+.separador-nav{
+    border: 1px#5A5B54  solid;
+}
+
+.navbar2{
+    margin-top: 0%;
+    background-color: black;
+
+}
+/* NAVBAR SIGN UP */
+.navbar2 .navbar2-sg{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 .navbar2-sg .navbar-a-sg{
+    color: #C7E7F1;
+    text-decoration: none;
+    padding: 0.70em;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* NAVBAR LOGIN */
+.navbar2 .navbar2-lg{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 .navbar2-lg .navbar-a-lg{
+    color: #C7E7F1;
+    text-decoration: none;
+    padding: 0.70em;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* NAVBAR HOME */
+.navbar2 .navbar2-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 .navbar2-container .navbar2-a{
+    color: #C7E7F1;
+    text-decoration: none;
+    padding: 0.70em;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+/* NAVBAR FAQ */
+/*
+.navbar2 .navbar2-faq{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar2 .navbar2-faq .navbar-a-faq{
+    color: #C7E7F1;
+    text-decoration: none;
+    padding: 0.70em;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+}*/
+/* FIN NAVBAR */
+
+
+
+/* LOG IN */
+.body-login{
+    background: url(../img/batman.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.body-login .contenedor .form .form-header .form-title{
+    color: #2590B2;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 25px;
+}
+
+.body-login .contenedor .form{
+    background: rgba(0,0,0,.6);
+    width: 80%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px, 35px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.body-login .contenedor .form .form-label{
+    display: block;
+    color: #2590B2;
+    font-size: 16px;
+    position: relative;
+}
+
+.body-login .contenedor .form-input{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #2590B2;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+}
+.body-login .contenedor .form .btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.body-login .contenedor .form .btn-submit .button-submit{
+    width: 60%;
+    outline: none;
+    background: #2590B2;
+    font-size: 16px;
+    border: none;
+    color: #FFF;
+    padding: 15px 0;
+}
+
+/* SIGN UP */
+
+.body-signup{
+    background: url(../img/wakanda.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.body-signup .contenedor .form .form-header .form-title{
+    color: #2590B2;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 25px;
+}
+
+.body-signup .contenedor .form{
+    background: rgba(0,0,0,.6);
+    width: 80%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px, 35px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.body-signup .contenedor .form .form-label{
+    display: block;
+    color: #2590B2;
+    font-size: 16px;
+    position: relative;
+}
+
+.body-signup .contenedor .form-input{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #2590B2;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFF;
+}
+.body-signup .contenedor .form .btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.body-signup .contenedor .form .btn-submit .button-submit{
+    width: 60%;
+    outline: none;
+    background: #2590B2;
+    font-size: 16px;
+    border: none;
+    color: #FFF;
+    padding: 15px 0;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container p{
+    display: flex;
+    align-self: center;
+    background-color: red;
+    width: 62%;
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #feb1b1;
+    font-size: 15px;
+}
+
+.message-container p.correct-message {
+    display: flex;
+    background-color: rgb(47, 164, 93);
+    box-shadow: 0 0 10px #dbf1c1;
+    text-transform: capitalize;
+    font-size: 15px;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: #C7E7F1;
+}
+
+/*  FAQ MAIN*/
+
+.body-faq{
+    background: url(../img/torre.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* HOME */
+
+.foto-carrusell{
+    width: 100%;
+}
+
+.innerImage{
+    width: 300px;
+}
+
+.logos-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dc-logo{
+    width: 20%;
+}
+
+.m-logo{
+    width: 20%;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.cards-dc{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-marvel{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER*/
+
+.footer-lg-sg{
+    margin-top: 100px;
+    padding: 60px;
+    background-color: black;
+}
+
+.footer-index{
+    margin-top: 350px;
+    padding: 60px;
+    background-color: black;
+}
+
+.footer-faq{
+    margin-top: 850px;
+    padding: 60px;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 350px) {   
+
+    .navbar2 .navbar2-container{
+        display: flex;
+        justify-content: space-center;
+    }
+   .navbar2 .navbar2-container .navbar2-a{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+}
