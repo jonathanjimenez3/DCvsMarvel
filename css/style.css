@@ -57,9 +57,9 @@ body{
 .slider .slider-ul{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 700%;
     background-color: #171F21 ;
-    animation: cambio 20s infinite alternate;
+    animation: cambio 15s infinite alternate;
     animation-timing-function: ease-in;
 }
 
@@ -75,17 +75,27 @@ body{
 
 @keyframes cambio{
     0% { margin-left: 0; }
-    20% { margin-left: 0; }
+    10% { margin-left: 0; }
 
+    15% { margin-left: -100%; }
     25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
 
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
+    30% { margin-left: -200%; }
+    40% { margin-left: -200%; }
 
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
+    45% { margin-left: -300%; }
+    55% { margin-left: -300%; }
+
+    60% { margin-left: -400%; }
+    70% { margin-left: -400%; }
+
+    75% { margin-left: -500%; }
+    85% { margin-left: -500%; }
+
+    90% { margin-left: -600%; }
+    100% { margin-left: -600%; }
 }
+
 
 /*  ACORDEON HOME*/
 .accordion{
@@ -124,6 +134,7 @@ body{
 }
 
 p {
+    text-align: center;
     margin-top: 14px;
     color: white;
     font-size: 17px;
@@ -138,6 +149,7 @@ p {
 }
 
 .a-card{
+    
     margin-top: 14px;
     color: white;
     font-size: 17px;
@@ -154,7 +166,7 @@ p {
 
 .accordion-ul{
     list-style: none;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     margin: 0;
 }
 
@@ -392,7 +404,15 @@ input::placeholder {
     color: #C7E7F1;
 }
 
-/* HOME */
+/* CARDS */
+.heroes-card{
+    display: flex;
+    justify-content: center;
+}
+.innerH1{
+    color: cornsilk;
+    text-align: center;
+}
 
 .innerImage{
     width: 300px;
@@ -413,6 +433,7 @@ input::placeholder {
 }
 
 
+/*  FOOTER HOME */
 
 @media screen and (max-width: 350px) {   
 
@@ -429,6 +450,55 @@ input::placeholder {
     }
 
 }
+
+
+@media screen and (min-width: 380px) {  
+
+    .footer-home{
+        display: flex;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: black;
+        justify-content: space-around;
+        margin: auto;
+        
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .container-sm{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .sm-logos{
+        display: flex;
+     
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .sm-logos .p-lg{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+        align-self: center;
+    }
+    
+
+
+}
+
+
 
 @media screen and (min-width: 750px) { 
 

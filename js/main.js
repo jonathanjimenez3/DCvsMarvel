@@ -54,7 +54,9 @@ async function getNameImg(id) {
     if (id === heroesArr[i].id) {
       card.innerHTML = " "
       const info = document.createElement('div')
-      info.innerHTML = `<h1>${heroesArr[i].name}</h1> <img class="innerImage" src='${heroesArr[i].images.lg}'>`
+      info.innerHTML = 
+      `<h1 class="innerH1">${heroesArr[i].name}</h1> 
+        <img class="innerImage" src='${heroesArr[i].images.lg}'>`
       card.appendChild(info)
 
       //return heroesArr[i].name + " " + heroesArr[i].images.lg;

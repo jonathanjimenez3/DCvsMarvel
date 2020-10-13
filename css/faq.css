@@ -25,6 +25,7 @@ body {
 
 
 .accordion{
+    width: auto;
     background-color: aliceblue;
     display: inline-block;
     position: relative;
@@ -191,12 +192,26 @@ ul li input[type=checkbox]:checked ~i:after{
     }
 }
 
+@media screen and (max-width: 700px){
+
+    .accordion{
+        background-color: aliceblue;
+        max-width: 290px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 98px 0;
+        padding: 30px;
+    }
+    
+}
 
 @media screen and (max-width: 900px){
 
     .accordion{
         background-color: aliceblue;
-        max-width: 300px;
+        max-width: 310px;
         display: inline-block;
         position: relative;
         left: 50%;
