@@ -63,7 +63,6 @@ async function getNameImg(id) {
 }
 
 getHeroName();
-printMarvel();
 getHeroPowerStats();
 /*
 async function printDc() {

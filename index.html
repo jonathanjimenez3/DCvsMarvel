@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
     <title>DC VS MARVEL</title>
   </head>
 
@@ -26,54 +27,55 @@
       </nav>
         <!-- Carrosell-->
             <div class="slider">
-              <ul>
-                <li><img src="./img/marvellucha.jpg" alt="Marvel team"</li>
-                <li><img src="./img/Justice2.jpg" alt="DC team"></li>
-                <li><img src="./img/marvelposition.jpeg" alt="Marvel team"></li>
-                <li><img src="./img/laligadelajusticiaportada.jpg" alt="Dc team"></li>
+              <ul class="slider-ul">
+                <li class="slider-li"><img src="./img/marvellucha.jpg" alt="Marvel team"</li>
+                <li class="slider-li"><img src="./img/Justice2.jpg" alt="DC team"></li>
+                <li class="slider-li"><img src="./img/marvelposition.jpeg" alt="Marvel team"></li>
+                <li class="slider-li"><img src="./img/laligadelajusticiaportada.jpg" alt="Dc team"></li>
               </ul>
             </div>
-        <!-- Busqueda de cartas-->
-        <main class="main">
 
-        <div class="desplegable">
-          <button class="boton">DC</button>
-             <div class="cards-dc">
-                <button id="batman-btn">Batman</button>
-                <button id="superman-btn">Superman</button>
-                <button id="wonder-btn">Wonder woman</button>
-                <button id="flash-btn">Flash</button>
-                <button id="aquaman-btn">Aquaman</button>
-                <button id="green-btn">Green Arrow</button>
-                <button id="cat-btn">Catwoman</button>
-                <button id="black-Light-btn">Black Lightning</button>
-                <button id="deathstroke-btn">Deathstroke</button>
-                <button id="supergirl-btn">Supergirl</button>
-                <button id="cyborg-btn">Cyborg</button>
+          <!-- ACORDEON -->
+            <div class="accordion">
+             <!-- meter-->
+              <ul class="accordion-ul">
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h2 class="h2-dc">DC</h2>
+                    <p id="superman-btn"><a href="#heroes" class="a-card">Superman</a></p>
+                    <p id="batman-btn"><a href="#heroes" class="a-card">Batman</a></p>
+                    <p id="wonder-btn"><a href="#heroes" class="a-card">Wonder Woman</a></p>
+                    <p id="flash-btn"><a href="#heroes" class="a-card">Flash</a></p>
+                    <p id="aquaman-btn"><a href="#heroes" class="a-card">Aquaman</a></p>
+                    <p id="green-btn"><a href="#heroes" class="a-card">Green Arrow</a></p>
+                    <p id="cat-btn"><a href="#heroes" class="a-card">Catwoman</a></p>
+                    <p id="black-Light-btn"><a href="#heroes" class="a-card">Black Lightning</a></p>
+                    <p id="deathstroke-btn"><a href="#heroes" class="a-card">Deathstroke</a></p>
+                    <p id="supergirl-btn"><a href="#heroes" class="a-card">Supergirl</a></p>
+                    <p id="cyborg-btn"><a href="#heroes" class="a-card">Cyborg</a></p>
+                </li>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h2 class="h2-marvel">Marvel</h2>
+                    <p id="spiderman-btn"><a href="#heroes" class="a-card">Spiderman</a></p>
+                    <p id="ironman-btn"><a href="#heroes" class="a-card">Ironman</a></p>
+                    <p id="capitan-btn"><a href="#heroes" class="a-card">Captain America</a></p>
+                    <p id="thor-btn"><a href="#heroes" class="a-card">Thor</a></p>
+                    <p id="hulk-btn"><a href="#heroes" class="a-card">Hulk</a></p>
+                    <p id="warMachine-btn"><a href="#heroes" class="a-card">War Machine</a></p>
+                    <p id="blackWidow-btn"><a href="#heroes" class="a-card">Black Widow</a></p>
+                    <p id="vison-btn"><a href="#heroes" class="a-card">Vision</a></p>
+                    <p id="falcon-btn"><a href="#heroes" class="a-card">Falcon</a></p>
+                    <p id="hawkeye-btn"><a href="#heroes" class="a-card">Hawkeye</a></p>
+                    <p id="scarlet-btn"><a href="#heroes" class="a-card">Scarlet Witch</a></p>
+                    <p id="panther-btn"><a href="#heroes" class="a-card">Black Panther</a></p>
+                    <p id="ant-btn"><a href="#heroes" class="a-card">Ant Man</a></p>
+                </li>
+              </ul>
             </div>
-          </div>
-            
-            <div class="cards-marvel">
-              <button id="spiderman-btn">Spiderman</button>
-              <button id="ironman-btn">Iron Man</button>
-              <button id="capitan-btn">Captain America</button>
-              <button id="thor-btn">Thor</button>
-              <button id="hulk-btn">Hulk</button>
-              <button id="warMachine-btn">War machine</button>
-              <button id="blackWidow-btn">Black widow</button>
-              <button id="vison-btn">Vision</button>
-              <button id="falcon-btn">Falcon</button>
-              <button id="hawkeye-btn">Hawkeye</button>
-              <button id="scarlet-btn">Scarlet witch</button>
-              <button id="panther-btn">Black panther</button>
-              <button id="ant-btn">Ant man</button>
-            </div>
-          </div>
-         
-          
-          <div id="heroes"></div>
-        </main>
-  
+            <div id="heroes"></div>
 
         <!--Footer-->
         <footer class="footer-index">

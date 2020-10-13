@@ -1,4 +1,3 @@
-const btnBatman = document.querySelector('#batman-btn');
 const btnSpiderman = document.querySelector('#spiderman-btn');
 const btnIronman = document.querySelector('#ironman-btn');
 const btnCapitan = document.querySelector('#capitan-btn');
@@ -12,6 +11,8 @@ const btnHawkeye = document.querySelector('#hawkeye-btn');
 const btnScarlet = document.querySelector('#scarlet-btn');
 const btnPanther = document.querySelector('#panther-btn');
 const btnAnt = document.querySelector('#ant-btn');
+
+const btnBatman = document.querySelector('#batman-btn');
 const btnSuperman = document.querySelector('#superman-btn');
 const btnWonder = document.querySelector('#wonder-btn');
 const btnFlash = document.querySelector('#flash-btn');
@@ -23,9 +24,8 @@ const btnDeathstroke = document.querySelector('#deathstroke-btn');
 const btnSupergirl = document.querySelector('#supergirl-btn');
 const btnCyborg = document.querySelector('#cyborg-btn');
 
-btnBatman.addEventListener('click', () => getNameImg(70))
-btnSpiderman.addEventListener('click', () => getNameImg(620))
 btnIronman.addEventListener('click', () => getNameImg(346))
+btnBatman.addEventListener('click', () => getNameImg(70))
 btnCapitan.addEventListener('click', () => getNameImg(149))
 btnThor.addEventListener('click', () => getNameImg(659))
 btnHulk.addEventListener('click', () => getNameImg(332))
@@ -47,3 +47,4 @@ btnBlackLight.addEventListener('click', () => getNameImg(103))
 btnDeathstroke.addEventListener('click', () => getNameImg(216))
 btnSupergirl.addEventListener('click', () => getNameImg(643))
 btnCyborg.addEventListener('click', () => getNameImg(194))
+btnSpiderman.addEventListener('click', () => getNameImg(620))
