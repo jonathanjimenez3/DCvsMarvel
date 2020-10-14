@@ -119,6 +119,9 @@ async function insertHeroPowerStats(id) {
         // `<h1 class="innerPw"> The power of ${heroesArr[i].name} is ${stats}</h1>`
         // pw.appendChild(infoPw)
 
+        pwIronman.innerHTML = `<h1 class="innerH1">${heroesArr[i].name}</h1><p class="innerText">${heroesArr[i].biography.publisher}<br>PW: ${stats}</p>`
+        pwIronman.appendChild(infoPw)
+
         pwThor.innerHTML = `<h1 class="innerH1">${heroesArr[i].name}</h1><p class="innerText">${heroesArr[i].biography.publisher}<br>PW: ${stats}</p>`
         pwThor.appendChild(infoPw)
 

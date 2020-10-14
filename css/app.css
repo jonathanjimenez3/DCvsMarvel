@@ -89,7 +89,7 @@ header label:hover{
 
 .container .card{
     position: relative;
-    max-width: 200px;
+    max-width: 1750px;
     height: 215px;
     background: black ;
     margin: 50px 10px;
@@ -150,7 +150,18 @@ header label:hover{
 }
 
 
-@media (max-width: 610px){
+@media (max-width: 410px){
+    .container .card .imgBx{
+        position: relative;
+        max-width: 230px;
+        height: 30%;
+        top: -30px;
+        z-index: 1;
+        box-shadow: 0 5px 202px rgb(0,0,0,0.2);
+    }
+}
+
+@media (min-width: 410px){
     .container .card .imgBx{
         position: relative;
         max-width: 183px;
