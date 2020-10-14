@@ -25,26 +25,55 @@ body{
     border: 1px#5A5B54  solid;
 }
 
-.navbar2{
-    margin-top: 0%;
-    background-color: black;    
-}
-/* NAVBAR HOME */
-.navbar2 .navbar2-container{
-    list-style-type: none;
+
+header{
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
-.navbar2 .navbar2-container .navbar2-a{
-    color: #C7E7F1;
-    text-decoration: none;
-    padding: 0.70em;
-    margin-right: 2em;
-    font-size: 1.8em;
-    font-weight: bold;
+#btn-menu{
+    display: none;
 }
+
+header label{
+    display: none;
+    width: 60px;
+    padding: 10px;
+    color: #C7E7F1;
+    font-size: 20px;
+    transition: all 500ms ease;
+    
+}
+
+header label:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #C7E7F1;
+    display: block;
+    padding: 9px 20px;
+    transition: all 500ms ease;
+    font-size:20px;
+}
+
+.menu li a:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
 
 /* FIN DE NAVBAR */
 
@@ -435,6 +464,12 @@ input::placeholder {
 
 /*  FOOTER HOME */
 
+
+
+
+
+
+
 @media screen and (max-width: 350px) {   
 
     .navbar2 .navbar2-container{
@@ -452,54 +487,6 @@ input::placeholder {
 }
 
 
-@media screen and (min-width: 380px) {  
-
-    .footer-home{
-        display: flex;
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: black;
-        justify-content: space-around;
-        margin: auto;
-        
-    }
-    
-    .footer-container{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin: auto;
-        align-items: center;
-    }
-    
-    .container-sm{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        
-    }
-    .sm-logos{
-        display: flex;
-     
-        margin: auto;
-        padding: 20px;
-    }
-    
-    .sm-logos .p-lg{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        padding: 0;
-        align-self: center;
-    }
-    
-
-
-}
-
-
-
 @media screen and (min-width: 750px) { 
 
     .slider img{
@@ -507,3 +494,43 @@ input::placeholder {
         height: 100%;
     }
 }  
+
+
+@media (max-width: 768px){
+    header{
+        width: 100%;
+        background-color: black;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: start;
+    }
+
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: black; 
+        width: 100%;
+        margin-top: -100%;
+        transition: all 500ms ease;   
+    }
+    .menu ul{
+        flex-direction: column;
+        border-top: 1px solid #fffa;
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: #C7E7F1;
+        display: block;
+        padding: 15px 20px;
+        transition: all 500ms ease;
+        font-size: 14px;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
