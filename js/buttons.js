@@ -48,3 +48,4 @@ btnDeathstroke.addEventListener('click', () => getNameImg(216))
 btnSupergirl.addEventListener('click', () => getNameImg(643))
 btnCyborg.addEventListener('click', () => getNameImg(194))
 btnSpiderman.addEventListener('click', () => getNameImg(620))
+

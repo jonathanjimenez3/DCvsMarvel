@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-   
 }
 
 body{
@@ -57,7 +56,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
     background-color: #171F21;
 }
 
@@ -65,7 +63,7 @@ body{
     position: relative;
     max-width: 200px;
     height: 215px;
-    background: silver;
+    background: black ;
     margin: 50px 10px;
     padding: 20px 0px;
     display: flex;
@@ -82,7 +80,7 @@ body{
     position: relative;
     max-width: 260px;
     height: 30%;
-    top: -60px;
+    top: -30px;
     z-index: 1;
     box-shadow: 0 5px 202px rgb(0,0,0,0.2);
 }
@@ -97,7 +95,7 @@ body{
     margin-top: -140px;
     padding: 170px 15px;
     text-align: justify;
-    color: #111;
+    color: #C7E7F1;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -107,12 +105,21 @@ body{
 .container .card:hover .content{
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: -10px;
     transition-delay: 0.3s;
 }
 
 
-
+.innerH1{
+    text-align: center;
+    border-bottom: solid #C7E7F1 1px;
+    width: fit-content;
+    margin: auto;
+}
+.innerText{
+    text-align: center;
+    font-size: 14px;
+}
 
 @media screen and (max-width: 350px) {   
 

@@ -1,9 +1,51 @@
-const btnBatman = document.querySelector('#batman-btn');
+const btnSpiderman = document.querySelector('#spiderman-btn');
+const btnIronman = document.querySelector('#ironman-btn');
+const btnCapitan = document.querySelector('#capitan-btn');
 const btnThor = document.querySelector('#thor-btn');
+const btnHulk = document.querySelector('#hulk-btn');
+const btnWarMachine = document.querySelector('#warMachine-btn');
+const btnBlackWidow = document.querySelector('#blackWidow-btn');
+const btnVision = document.querySelector('#vison-btn');
+const btnFalcon = document.querySelector('#falcon-btn');
+const btnHawkeye = document.querySelector('#hawkeye-btn');
+const btnScarlet = document.querySelector('#scarlet-btn');
+const btnPanther = document.querySelector('#panther-btn');
+const btnAnt = document.querySelector('#ant-btn');
 
-
+const btnBatman = document.querySelector('#batman-btn');
+const btnSuperman = document.querySelector('#superman-btn');
+const btnWonder = document.querySelector('#wonder-btn');
+const btnFlash = document.querySelector('#flash-btn');
+const btnAquaman = document.querySelector('#aquaman-btn');
+const btnGreen = document.querySelector('#green-btn');
+const btnCat = document.querySelector('#cat-btn');
+const btnBlackLight = document.querySelector('#black-Light-btn');
+const btnDeathstroke = document.querySelector('#deathstroke-btn');
+const btnSupergirl = document.querySelector('#supergirl-btn');
+const btnCyborg = document.querySelector('#cyborg-btn');
 
 
 btnBatman.addEventListener('click', () => insertHeroPowerStats(70))
 btnThor.addEventListener('click', () => insertHeroPowerStats(659))
-
+btnIronman.addEventListener('click', () => insertHeroPowerStats(346))
+btnCapitan.addEventListener('click', () => insertHeroPowerStats(149))
+btnHulk.addEventListener('click', () => insertHeroPowerStats(332))
+btnWarMachine.addEventListener('click', () => insertHeroPowerStats(703))
+btnBlackWidow.addEventListener('click', () => insertHeroPowerStats(107))
+btnVision.addEventListener('click', () => insertHeroPowerStats(697))
+btnFalcon.addEventListener('click', () => insertHeroPowerStats(251))
+btnHawkeye.addEventListener('click', () => insertHeroPowerStats(313))
+btnScarlet.addEventListener('click', () => insertHeroPowerStats(579))
+btnPanther.addEventListener('click', () => insertHeroPowerStats(106))
+btnAnt.addEventListener('click', () => insertHeroPowerStats(30))
+btnSuperman.addEventListener('click', () => insertHeroPowerStats(644))
+btnWonder.addEventListener('click', () => insertHeroPowerStats(720))
+btnFlash.addEventListener('click', () => insertHeroPowerStats(263))
+btnAquaman.addEventListener('click', () => insertHeroPowerStats(38))
+btnGreen.addEventListener('click', () => insertHeroPowerStats(298))
+btnCat.addEventListener('click', () => insertHeroPowerStats(165))
+btnBlackLight.addEventListener('click', () => insertHeroPowerStats(103))
+btnDeathstroke.addEventListener('click', () => insertHeroPowerStats(216))
+btnSupergirl.addEventListener('click', () => insertHeroPowerStats(643))
+btnCyborg.addEventListener('click', () => insertHeroPowerStats(194))
+btnSpiderman.addEventListener('click', () => insertHeroPowerStats(620))
