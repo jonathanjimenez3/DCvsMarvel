@@ -7,24 +7,7 @@ async function getHeroes() {
   return Promise.all(heroesJSON);
 }
 
-// Get super hero Power
-async function getHeroPowerStats(id) {
-  let heroesArr = await getHeroes();
-  for (let i = 0; i < heroesArr.length; i++) {
-    if (id === heroesArr[i].id) {
-      let stats;
-      stats =
-        heroesArr[i].powerstats.intelligence +
-        heroesArr[i].powerstats.strength +
-        heroesArr[i].powerstats.speed +
-        heroesArr[i].powerstats.durability +
-        heroesArr[i].powerstats.power +
-        heroesArr[i].powerstats.combat;
-      return stats;
-    }
-  }
-}
-
+  
 // Get super hero name
 async function getHeroName(id) {
   let heroesArr = await getHeroes();
@@ -64,46 +47,64 @@ async function getNameImg(id) {
   }
 }
 
-getHeroName();
-getHeroPowerStats();
-/*
-async function printDc() {
-  let dcArr = [];
-  dcArr[0] = await getHeroImage(70);
-  dcArr[1] = await getHeroImage(644);
-  dcArr[2] = await getHeroImage(720);
-  dcArr[3] = await getHeroImage(263);
-  dcArr[4] = await getHeroImage(38);
-  dcArr[5] = await getHeroImage(298);
-  dcArr[6] = await getHeroImage(165);
-  dcArr[7] = await getHeroImage(103);
-  dcArr[8] = await getHeroImage(216);
-  dcArr[9] = await getHeroImage(643);
-  dcArr[10] = await getHeroImage(194);
-  console.log(dcArr);
+
+async function insertHeroPowerStats(id) {
+  let heroesArr = await getHeroes();
+  //const pw = document.querySelector('#heroes-pw')
+  const pwThor = document.querySelector('#heroes-pw-thor')
+  const pwBatman = document.querySelector('#heroes-pw-batman')
+
+  for (let i = 0; i < heroesArr.length; i++) {
+    if (id === heroesArr[i].id) {
+      let stats;
+       stats =
+        heroesArr[i].powerstats.intelligence +
+        heroesArr[i].powerstats.strength +
+        heroesArr[i].powerstats.speed +
+        heroesArr[i].powerstats.durability +
+        heroesArr[i].powerstats.power +
+        heroesArr[i].powerstats.combat;
+
+        //pw.innerHTML = " "
+        pwThor.innerHTML = " "
+        pwBatman.innerHTML = " "
+        const infoPw = document.createElement('div')
+
+        // pw.innerHTML = 
+        // `<h1 class="innerPw"> The power of ${heroesArr[i].name} is ${stats}</h1>`
+        // pw.appendChild(infoPw)
+
+        pwThor.innerHTML = 
+        `<h1 class="innerH1"> The power of ${heroesArr[i].name} is ${stats}</h1>`
+        pwThor.appendChild(infoPw)
+
+        pwBatman.innerHTML = 
+        `<h1 class="innerH1"> The power of ${heroesArr[i].name} is ${stats}</h1>`
+        pwBatman.appendChild(infoPw)
+
+
+    }
+  }
 }
-async function printMarvel() {
-  let marvelArr = [];
-  marvelArr[0] = await getHeroImage(346);
-  marvelArr[1] = await getHeroImage(149);
-  marvelArr[2] = await getHeroImage(659);
-  marvelArr[3] = await getHeroImage(620);
-  marvelArr[4] = await getHeroImage(332);
-  marvelArr[5] = await getHeroImage(703);
-  marvelArr[6] = await getHeroImage(107);
-  marvelArr[7] = await getHeroImage(697);
-  marvelArr[8] = await getHeroImage(251);
-  marvelArr[9] = await getHeroImage(313);
-  marvelArr[10] = await getHeroImage(579);
-  marvelArr[10] = await getHeroImage(106);
-  marvelArr[10] = await getHeroImage(30);
-  //console.log(marvelArr);
+
+
+/*
+// Get super hero Power
+async function getHeroPowerStats(id) {
+  let heroesArr = await getHeroes();
+  for (let i = 0; i < heroesArr.length; i++) {
+    if (id === heroesArr[i].id) {
+      let stats;
+       stats =
+        heroesArr[i].powerstats.intelligence +
+        heroesArr[i].powerstats.strength +
+        heroesArr[i].powerstats.speed +
+        heroesArr[i].powerstats.durability +
+        heroesArr[i].powerstats.power +
+        heroesArr[i].powerstats.combat;
+        return stats;
+    }
+  }
 }
 */
-
-
-
-
-
-
 
