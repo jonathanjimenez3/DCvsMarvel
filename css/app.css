@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbar > a{
+    display: flex;
+    align-items: center;
+}
+
+.separador-nav{
+    border: 1px#5A5B54  solid;
+}
+
+.navbar2{
+    margin-top: 0%;
+    background-color: black;    
+}
+/* NAVBAR HOME */
+.navbar2 .navbar2-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar2 .navbar2-container .navbar2-a{
+    color: #C7E7F1;
+    text-decoration: none;
+    padding: 0.70em;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* FIN DE NAVBAR */
+
+/* CARDS */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 50px 10px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 300px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    max-width: 260px;
+    height: 30%;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 202px rgb(0,0,0,0.2);
+}
+
+.container .card .imgBx img{ 
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 170px 15px;
+    text-align: ;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 350px) {   
+
+    .navbar2 .navbar2-container{
+        display: flex;
+        justify-content: space-center;
+    }
+   .navbar2 .navbar2-container .navbar2-a{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+}
