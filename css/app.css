@@ -259,61 +259,15 @@ cursor: pointer;
 .center .content .phone{
     margin: 10px 0;
 }
-.right form .text{
-    font-size: 10px;
-    margin-bottom: 2px;
-    color:#656565;
-}
-.right form .msg{
-margin-top: 10px;
-}
 
-.right form input, .right form textarea{
-    width: 100%;
-    font-size: 15px;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222;
-}
-.right form input:focus,
-.right form textarea:focus{
-    outline-color: #3498db;
-}
-.right form input{
-    height: 35px;
-}
-.right form .btn{
-margin-top: 10px;
-}
-.right form .btn button{
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #f12020;
-    font-size: 10px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-}
-.right form .btn button:hover{
-    background: #000;
-}
 .bottom center{
     padding: 5px;
     font-size: 10px;
     background: #151515;
 }
+
 .bottom center span{
     color: #656565;
-}
-.bottom center span a{
-    color: #120202;
-    text-decoration: none;
-}
-
-.bottom center a:hover{
-    text-decoration: underline;
 }
 
 
