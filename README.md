@@ -1,5 +1,6 @@
 <h1>Marvel vs DC</h1>
 Fanatico de <strong>Marvel</strong> i/o <strong>DC</strong>? <br>
+En esta web app podremos buscar entre los personajes de ambos mundos para conocer su poder.
 
 <h2>MVP (DOM - CANVAS)</h2>
 <strong>MVP</strong>
@@ -7,13 +8,13 @@ Fanatico de <strong>Marvel</strong> i/o <strong>DC</strong>? <br>
   <li><strong>Signup:</strong> Nuevos usuarios.</li>
   <li><strong>Login:</strong> Acceso para los usuarios.</li>
   <li><strong>Homepage:</strong> Descripción de los dos mundos con los personajes que incluyen.</li>
-  <li><strong>CardsGame:</strong> Elegir mundo y jugar mostrando una carta tras otra.</li>
+  <li><strong>Cards:</strong> Seleccionar carta para descubrir la fuerza de cada uno.</li>
   <li><strong>FAQ:</strong> Informacion sobre backlog y como funciona el juego.</li>
 </ul>
 
 <h2>Backlog</h2>
-Simular una batalla con cartas.
-Quiz.
+Simular una batalla con cartas.<br>
+Quiz.<br>
 Crear una Api con preguntas, información y fotos actualizadas sobre los mundos.<br>
 Permitir jugar contra otro usuario.<br>
 Pagina visible para todos pero que solo puedan jugar los registrados.
