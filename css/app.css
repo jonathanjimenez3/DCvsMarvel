@@ -15,6 +15,7 @@ body{
     display: flex;
     justify-content: space-around;
     background-color: black;
+    border-bottom: 1px#f12020 solid;
 }
 
 .navbar > a{
@@ -22,12 +23,8 @@ body{
     align-items: center;
 }
 
-.separador-nav{
-    border: 1px#5A5B54  solid;
-}
-
-
 header{
+    border-top: 1px#f12020 solid;
     width: 100%;
     margin-top: 50px;
     background-color: black;
@@ -156,19 +153,12 @@ header label:hover{
 }
 
 
-
-
-
-
-
-
 /* FOOTER */
 footer{
-    /*position: fixed;*/
     bottom: 0px;
     width: 100%;
     background: black;
-    color: white;
+    color: #2590B2;;
 }
 
 .main-content{
@@ -180,7 +170,7 @@ footer{
     padding: 10px 20px;
 }
 
-.box h2{
+.box .ft-h2{
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -210,6 +200,8 @@ footer{
 }
 .left .content p{
     text-align: justify;
+    color: #2590B2;
+    font-size: 17px;
 }
 
 .left .content .social{
@@ -235,6 +227,14 @@ footer{
     background: #f12020;
 }
 
+.lg-ft{
+    display: flex;
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 32px;
+    border-radius: 50px;
+}
+
 .center .content .fas{
 font-weight:  1.4375rem;
 background: #1a1a1a;
@@ -252,7 +252,7 @@ cursor: pointer;
 }
 
 .center .content .text{
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 500;
     padding-left: 10px;
 }
@@ -269,7 +269,6 @@ cursor: pointer;
 .bottom center span{
     color: #656565;
 }
-
 
 @media screen and (max-width: 569px){
     .container .card .imgBx{
