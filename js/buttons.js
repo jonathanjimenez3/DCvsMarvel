@@ -1,3 +1,25 @@
+function toCorrectName(str){
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    }
+
+const DC = document.querySelector('#DC')
+DC.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const DCInput = document.querySelector('#DC-input').value
+    const stringOkDc = toCorrectName(DCInput)
+    getHeroNameDC(stringOkDc)})
+
+
+const Marvel = document.querySelector('#Marvel')
+Marvel.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const MarvelInput = document.querySelector('#Marvel-input').value
+    const stringOkMarvel = toCorrectName(MarvelInput)
+    getHeroNameMarvel(stringOkMarvel)})
+
+    
+
+/*
 const btnSpiderman = document.querySelector('#spiderman-btn');
 const btnIronman = document.querySelector('#ironman-btn');
 const btnCapitan = document.querySelector('#capitan-btn');
@@ -23,18 +45,8 @@ const btnBlackLight = document.querySelector('#black-Light-btn');
 const btnDeathstroke = document.querySelector('#deathstroke-btn');
 const btnSupergirl = document.querySelector('#supergirl-btn');
 const btnCyborg = document.querySelector('#cyborg-btn');
+*/
 
-function toCorrectName(str){
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-    }
-
-const DC = document.querySelector('#DC')
-
-DC.addEventListener('submit', (event) => {
-    event.preventDefault()
-    const DCInput = document.querySelector('#DC-input').value
-    const stringOk = toCorrectName(DCInput)
-    getHeroName(stringOk)})
 /*
 btnIronman.addEventListener('click', () => getNameImg(346))
 btnBatman.addEventListener('click', () => getNameImg(70))

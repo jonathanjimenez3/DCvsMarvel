@@ -25,19 +25,34 @@ async function getNameImg(id) {
 }
 
 // Get super hero name
-async function getHeroName(name) {
+async function getHeroNameDC(name) {
   let heroesArr = await getHeroes();
   const search = document.querySelector('#search')
 
   const heroeName = await heroesArr.find(heroe=>{
     if (name === heroe.name && heroe.biography.publisher == "DC Comics"){
       return heroe;
+    }else if(name === heroe.name && heroe.biography.publisher == "Superman Prime One-Million"){
+      return heroe;
     }
-   //console.log(heroeName)
-
-   
   })
-  
+  const mostrarHeroe = document.createElement('div')
+  search.innerHTML= " "
+  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img src="${heroeName.images.lg}">`
+  search.appendChild(mostrarHeroe)
+}
+
+async function getHeroNameMarvel(name) {
+  let heroesArr = await getHeroes();
+  const search = document.querySelector('#search')
+
+  const heroeName = await heroesArr.find(heroe=>{
+    if (name === heroe.name && heroe.biography.publisher == "Marvel Comics"){
+      return heroe;
+    }else if(name === heroe.name && heroe.biography.publisher == "Rune King Thor"){
+      return heroe;
+    }
+  })
   const mostrarHeroe = document.createElement('div')
   search.innerHTML= " "
   mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img src="${heroeName.images.lg}">`
