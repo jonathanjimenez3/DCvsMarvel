@@ -7,27 +7,6 @@ async function getHeroes() {
   return Promise.all(heroesJSON);
 }
 
-  
-// Get super hero name
-async function getHeroName(id) {
-  let heroesArr = await getHeroes();
-  for (let i = 0; i < heroesArr.length; i++) {
-    if (id === heroesArr[i].id) {
-      return heroesArr[i].name;
-    }
-  }
-}
-
-// Get super hero Image
-async function getHeroImage(id) {
-  let heroesArr = await getHeroes();
-  for (let i = 0; i < heroesArr.length; i++) {
-    if (id === heroesArr[i].id) {
-      return heroesArr[i].images.lg;
-    }
-  }
-}
-
 async function getNameImg(id) {
   let heroesArr = await getHeroes();
 
@@ -44,6 +23,27 @@ async function getNameImg(id) {
     }
   }
 }
+
+// Get super hero name
+async function getHeroName(name) {
+  let heroesArr = await getHeroes();
+  const search = document.querySelector('#search')
+
+  const heroeName = await heroesArr.find(heroe=>{
+    if (name === heroe.name && heroe.biography.publisher == "DC Comics"){
+      return heroe;
+    }
+   //console.log(heroeName)
+
+   
+  })
+  
+  const mostrarHeroe = document.createElement('div')
+  search.innerHTML= " "
+  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img src="${heroeName.images.lg}">`
+  search.appendChild(mostrarHeroe)
+}
+
 
 
 async function insertHeroPowerStats(id) {
@@ -73,7 +73,6 @@ async function insertHeroPowerStats(id) {
   const pwHawkeye = document.querySelector('#heroes-pw-hawkeye')
   const pwScarlet = document.querySelector('#heroes-pw-scarlet')
   const pwBlackPanther = document.querySelector('#heroes-pw-blackPanther')
-
 
   for (let i = 0; i < heroesArr.length; i++) {
     if (id === heroesArr[i].id) {
@@ -194,24 +193,18 @@ async function insertHeroPowerStats(id) {
   }
 }
 
-
 /*
-// Get super hero Power
-async function getHeroPowerStats(id) {
+
+
+// Get super hero Image
+async function getHeroImage(id) {
   let heroesArr = await getHeroes();
   for (let i = 0; i < heroesArr.length; i++) {
     if (id === heroesArr[i].id) {
-      let stats;
-       stats =
-        heroesArr[i].powerstats.intelligence +
-        heroesArr[i].powerstats.strength +
-        heroesArr[i].powerstats.speed +
-        heroesArr[i].powerstats.durability +
-        heroesArr[i].powerstats.power +
-        heroesArr[i].powerstats.combat;
-        return stats;
+      return heroesArr[i].images.lg;
     }
   }
 }
-*/
 
+
+*/

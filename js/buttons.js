@@ -24,6 +24,18 @@ const btnDeathstroke = document.querySelector('#deathstroke-btn');
 const btnSupergirl = document.querySelector('#supergirl-btn');
 const btnCyborg = document.querySelector('#cyborg-btn');
 
+function toCorrectName(str){
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    }
+
+const DC = document.querySelector('#DC')
+
+DC.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const DCInput = document.querySelector('#DC-input').value
+    const stringOk = toCorrectName(DCInput)
+    getHeroName(stringOk)})
+/*
 btnIronman.addEventListener('click', () => getNameImg(346))
 btnBatman.addEventListener('click', () => getNameImg(70))
 btnCapitan.addEventListener('click', () => getNameImg(149))
@@ -48,4 +60,5 @@ btnDeathstroke.addEventListener('click', () => getNameImg(216))
 btnSupergirl.addEventListener('click', () => getNameImg(643))
 btnCyborg.addEventListener('click', () => getNameImg(194))
 btnSpiderman.addEventListener('click', () => getNameImg(620))
+*/
 

@@ -121,7 +121,8 @@ header label:hover{
     90% { margin-left: -600%; }
     100% { margin-left: -600%; }
 }
-/*  ACORDEON HOME*/
+
+/*  ACORDEON HOME
 .accordion{
     background-color: #171F21 ;
     display: inline-block;
