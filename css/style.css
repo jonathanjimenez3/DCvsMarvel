@@ -121,8 +121,6 @@ header label:hover{
     90% { margin-left: -600%; }
     100% { margin-left: -600%; }
 }
-
-
 /*  ACORDEON HOME*/
 .accordion{
     background-color: #171F21 ;
@@ -175,7 +173,6 @@ p {
 }
 
 .a-card{
-    
     margin-top: 14px;
     color: white;
     font-size: 17px;
@@ -188,7 +185,6 @@ p {
     z-index: z;
     text-decoration: none;
 }
-
 
 .accordion-ul{
     list-style: none;
@@ -270,12 +266,7 @@ p,
     transform: translate(-2px,0) rotate(-45deg);
 }
 
-
-
-
-
 /* FIN ACORDEON HOME*/
-
 
 /* LOG IN */
 .body-login{
@@ -291,6 +282,10 @@ p,
     text-align: center;
     padding: 14px 0;
     font-size: 25px;
+}
+
+.contenedor{
+    margin-bottom: 100px;
 }
 
 .body-login .contenedor .form{
@@ -487,7 +482,7 @@ footer{
     position: absolute;
     content: '';
     height: 2px;
-    width: 15%;
+    width: 16%;
     background: #f12020;
     top: -10px;
 }

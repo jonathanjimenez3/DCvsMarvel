@@ -93,7 +93,7 @@ header label:hover{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    margin: 98px 0;
+    margin: 120px 0;
     padding: 30px;
 }
 
@@ -103,7 +103,7 @@ h1{
     line-height: 42px;
     letter-spacing: 3px;
     font-weight: 100;
-    color: #246376;
+    color: #0D7B93;
 }
 
 h1 i{
@@ -112,7 +112,7 @@ h1 i{
 
 .acc-h2{
     text-align: center;
-    font-size:  26px;
+    font-size:  20px;
     line-height: 34px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -129,6 +129,7 @@ h1 i{
     color: #f12020;
     background-color: rgba(211,211,211);
     font-size: 17px;
+    text-align: center;
     line-height: 26px;
     letter-spacing: 1px;
     position: relative;
@@ -337,38 +338,8 @@ cursor: pointer;
 .bottom center span{
     color: #656565;
 }
-
-
-@media screen and (max-width: 350px) {   
-
-    .accordion{
-        background-color: aliceblue;
-        max-width: 250px;
-        display: inline-block;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin: 98px 0;
-        padding: 30px;
-    }
-}
-
-@media screen and (max-width: 700px){
-
-    .accordion{
-        background-color: aliceblue;
-        max-width: 290px;
-        display: inline-block;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin: 98px 0;
-        padding: 30px;
-    }
-    
-}
-
-@media (max-width: 768px){
+/* Media */
+@media screen and (max-width: 768px){
     header{
         width: 100%;
         background-color: black;
@@ -407,20 +378,7 @@ cursor: pointer;
     }
 }
 
-
 @media screen and (max-width: 900px){
-
-    .accordion{
-        background-color: aliceblue;
-        max-width: 310px;
-        display: inline-block;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin: 98px 0;
-        padding: 30px;
-    }
-
     footer{
         position: relative;
         bottom: 0px;
@@ -434,5 +392,3 @@ cursor: pointer;
         margin: 5px 0;
     }
 }
-
-
