@@ -1,5 +1,5 @@
 <h1>Marvel vs DC</h1>
-Fanatico de <strong>Marvel</strong> i/o <strong>DC</strong>? <br>En esta web app vamos a poder simular una batalla entre estos dos increibles mundos y demostrar cuanto realmente sabemos de ellos con un Quiz.
+Fanatico de <strong>Marvel</strong> i/o <strong>DC</strong>? <br>
 
 <h2>MVP (DOM - CANVAS)</h2>
 <strong>MVP</strong>
@@ -12,7 +12,9 @@ Fanatico de <strong>Marvel</strong> i/o <strong>DC</strong>? <br>En esta web app
 </ul>
 
 <h2>Backlog</h2>
-Crear una Api con preguntas random sobre los mundos.<br>
+Simular una batalla con cartas.
+Quiz.
+Crear una Api con preguntas, información y fotos actualizadas sobre los mundos.<br>
 Permitir jugar contra otro usuario.<br>
 Pagina visible para todos pero que solo puedan jugar los registrados.
 
@@ -32,7 +34,7 @@ https://superheroapi-m1.herokuapp.com/heroes/
 https://trello.com/b/IYr7OUTw/marvel-vs-dc
 
 <h2>Github</h2>
-URls for the project repo and deploy Link Repo Link Deploy
+https://jonathanjimenez3.github.io/DCvsMarvel/
 
 <h2>Slides</h2>
 <<<<<<< HEAD
