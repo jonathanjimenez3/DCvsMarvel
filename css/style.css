@@ -130,6 +130,7 @@ header label:hover{
 h1{
     text-align: center;
     color: #2590B2;
+    padding-bottom: 10px;
 }
 .container-form form{
 width: 100%;
@@ -304,6 +305,7 @@ input{
 
 input::placeholder {
     color: #2590B2;;
+    text-align: center;
 }
 
 /* CARDS */
@@ -319,6 +321,7 @@ background-color: #171F21;
 .innerH1{
     color: #2590B2;
     text-align: center;
+    padding-bottom: 15px;
 }
 .innerImg{
     width: 100%;
