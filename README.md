@@ -1,5 +1,5 @@
 
-<img src="/img/Marvel-vs-DCReadme.jpg">
+<img src="/img/Marvel-vs-DCReadme.jpg" width="100%" alt="DCvsMarvel">
 
 
 <h1>Marvel vs DC</h1>
@@ -10,14 +10,14 @@ En esta web app podremos buscar entre los personajes de ambos mundos para conoce
 <ul>
   <li><strong>Signup:</strong> Nuevos usuarios.</li>
   <li><strong>Login:</strong> Acceso para los usuarios.</li>
-  <li><strong>Homepage:</strong> Descripción de los dos mundos con los personajes que incluyen.</li>
+  <li><strong>Homepage:</strong> Un buscador de personajes para cada mundo.</li>
   <li><strong>Cards:</strong> Seleccionar carta para descubrir la fuerza de cada uno.</li>
-  <li><strong>FAQ:</strong> Informacion sobre backlog y como funciona el juego.</li>
+  <li><strong>FAQ:</strong> Información sobre backlog.</li>
 </ul>
 
 <h2>Backlog</h2>
 <ul>
-  <li>Quiz.</li>
+  <li>Quiz para descubrir cuanto realmente sabes sobre ellos.</li>
   <li>Simular una batalla con cartas.</li>
   <li>Crear una Api con preguntas,información y fotos actualizadas sobre los mundos.</li>
   <li>Permitir jugar contra otro usuario.</li>
@@ -55,9 +55,6 @@ https://www.mockflow.com/app/#Wireframe
     </ul>
     </li>
 </ul>
-
-
-
 
 <h2>APIs</h2>
 https://superheroapi.com/ids.html <br>
