@@ -16,5 +16,3 @@ Marvel.addEventListener('submit', (event) => {
     const MarvelInput = document.querySelector('#Marvel-input').value
     const stringOkMarvel = toCorrectName(MarvelInput)
     getHeroNameMarvel(stringOkMarvel)})
-
-    

@@ -458,12 +458,18 @@ cursor: pointer;
         align-items: center;
         margin: auto;
     }
-
 }
 
-
+@media screen and (max-width: 528px) {
+    .containerSearch{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: #171F21;
+    }
+   
+}  
 @media screen and (min-width: 750px) { 
-
     .slider img{
         width: 100%;
         height: 100%;
