@@ -126,8 +126,9 @@ h1 i{
 .respuestas{
     max-width: 800px;
     margin-top: 14px;
+    padding: 15px 0;
     color: #f12020;
-    background-color: rgba(211,211,211);
+    background-color: #171F21;;
     font-size: 17px;
     text-align: center;
     line-height: 26px;

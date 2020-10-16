@@ -27,7 +27,7 @@ async function getNameImg(id) {
 // Get super hero name
 async function getHeroNameDC(name) {
   let heroesArr = await getHeroes();
-  const search = document.querySelector('#search')
+  const searchDC = document.querySelector('#searchDC')
 
   const heroeName = await heroesArr.find(heroe=>{
     if (name === heroe.name && heroe.biography.publisher == "DC Comics"){
@@ -37,14 +37,14 @@ async function getHeroNameDC(name) {
     }
   })
   const mostrarHeroe = document.createElement('div')
-  search.innerHTML= " "
-  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img src="${heroeName.images.lg}">`
-  search.appendChild(mostrarHeroe)
+  searchDC.innerHTML= " "
+  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img class="innerImg" src="${heroeName.images.md}">`
+  searchDC.appendChild(mostrarHeroe)
 }
 
 async function getHeroNameMarvel(name) {
   let heroesArr = await getHeroes();
-  const search = document.querySelector('#search')
+  const searchMarvel = document.querySelector('#searchMarvel')
 
   const heroeName = await heroesArr.find(heroe=>{
     if (name === heroe.name && heroe.biography.publisher == "Marvel Comics"){
@@ -54,9 +54,9 @@ async function getHeroNameMarvel(name) {
     }
   })
   const mostrarHeroe = document.createElement('div')
-  search.innerHTML= " "
-  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img src="${heroeName.images.lg}">`
-  search.appendChild(mostrarHeroe)
+  searchMarvel.innerHTML= " "
+  mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img class="innerImg" src="${heroeName.images.md}">`
+  searchMarvel.appendChild(mostrarHeroe)
 }
 
 
@@ -208,18 +208,3 @@ async function insertHeroPowerStats(id) {
   }
 }
 
-/*
-
-
-// Get super hero Image
-async function getHeroImage(id) {
-  let heroesArr = await getHeroes();
-  for (let i = 0; i < heroesArr.length; i++) {
-    if (id === heroesArr[i].id) {
-      return heroesArr[i].images.lg;
-    }
-  }
-}
-
-
-*/

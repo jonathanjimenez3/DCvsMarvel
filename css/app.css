@@ -44,7 +44,7 @@ header label{
     display: none;
     width: 60px;
     padding: 10px;
-    color: #C7E7F1;
+    color: #2590B2;
     font-size: 20px;
     transition: all 500ms ease;
     
@@ -63,7 +63,7 @@ header label:hover{
 
 .menu li a{
     text-decoration: none;
-    color: #C7E7F1;
+    color: #2590B2;
     display: block;
     padding: 15px 20px;
     transition: all 500ms ease;
