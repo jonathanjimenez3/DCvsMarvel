@@ -44,11 +44,10 @@ header label{
     color: #2590B2;
     font-size: 20px;
     transition: all 500ms ease;
-    
 }
 
 header label:hover{
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,0.3);
 }
 
 .menu ul{
@@ -68,7 +67,7 @@ header label:hover{
 }
 
 .menu li a:hover{
-    background-color:rgba(0,0,0,0.3);
+    background-color:rgba(255,255,255,0.3);
 }
 
 
@@ -505,14 +504,14 @@ cursor: pointer;
 
     .menu li a{
         text-decoration: none;
-        color: #C7E7F1;
+        color: #2590B2;
         display: block;
         padding: 15px 20px;
         transition: all 500ms ease;
         font-size: 14px;
     }
     #btn-menu:checked ~ .menu{
-        margin: 0;
+        margin: 45px 0px;
     }
 }
 @media screen and (max-width: 900px){
