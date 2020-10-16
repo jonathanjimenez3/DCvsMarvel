@@ -7,24 +7,7 @@ async function getHeroes() {
   return Promise.all(heroesJSON);
 }
 
-async function getNameImg(id) {
-  let heroesArr = await getHeroes();
-
-  const card = document.querySelector('#heroes')
-  
-  for (let i = 0; i < heroesArr.length; i++) {
-    if (id === heroesArr[i].id) {
-      card.innerHTML = " "
-      const info = document.createElement('div')
-      info.innerHTML = 
-      `<h1 class="innerH1">${heroesArr[i].name}</h1> 
-        <img class="innerImage" src='${heroesArr[i].images.lg}'>`
-      card.appendChild(info)
-    }
-  }
-}
-
-// Get super hero name
+// GET SUPER HERO NAME DC
 async function getHeroNameDC(name) {
   let heroesArr = await getHeroes();
   const searchDC = document.querySelector('#searchDC')
@@ -41,7 +24,7 @@ async function getHeroNameDC(name) {
   mostrarHeroe.innerHTML = `<h1 class="innerH1">${heroeName.name}</h1><img class="innerImg" src="${heroeName.images.md}">`
   searchDC.appendChild(mostrarHeroe)
 }
-
+// GET SUPER HERO NAME MARVEL
 async function getHeroNameMarvel(name) {
   let heroesArr = await getHeroes();
   const searchMarvel = document.querySelector('#searchMarvel')
@@ -59,11 +42,10 @@ async function getHeroNameMarvel(name) {
   searchMarvel.appendChild(mostrarHeroe)
 }
 
-
-
+// FUNCION PARA OBTENER E INSERTAR NOMBRE, MARVEL O DC Y TOTAL PW 
 async function insertHeroPowerStats(id) {
   let heroesArr = await getHeroes();
-  //const pw = document.querySelector('#heroes-pw')
+
   const pwThor = document.querySelector('#heroes-pw-thor')
   const pwBatman = document.querySelector('#heroes-pw-batman')
   const pwSpiderman = document.querySelector('#heroes-pw-spiderman')
@@ -100,7 +82,6 @@ async function insertHeroPowerStats(id) {
         heroesArr[i].powerstats.power +
         heroesArr[i].powerstats.combat;
 
-        //pw.innerHTML = " "
         pwThor.innerHTML = " "
         pwBatman.innerHTML = " "
         pwSpiderman.innerHTML = " "
@@ -126,12 +107,7 @@ async function insertHeroPowerStats(id) {
         pwScarlet.innerHTML = " "
         pwBlackPanther.innerHTML = " "
 
-
         const infoPw = document.createElement('div')
-
-        // pw.innerHTML = 
-        // `<h1 class="innerPw"> The power of ${heroesArr[i].name} is ${stats}</h1>`
-        // pw.appendChild(infoPw)
 
         pwIronman.innerHTML = `<h1 class="innerH1">${heroesArr[i].name}</h1><p class="innerText">${heroesArr[i].biography.publisher}<br>PW: ${stats}</p>`
         pwIronman.appendChild(infoPw)

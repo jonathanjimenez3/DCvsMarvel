@@ -24,9 +24,6 @@ En esta web app podremos buscar entre los personajes de ambos mundos para conoce
   <li>Pagina visible para todos pero que solo puedan jugar los registrados.</li>
 </ul>
 
-<h2>Wireframes</h2>
-https://www.mockflow.com/app/#Wireframe
-
 <h2>Data structure</h2>
 <h3>root/</h3>
 <ul>
@@ -55,6 +52,9 @@ https://www.mockflow.com/app/#Wireframe
     </ul>
     </li>
 </ul>
+
+<h2>Wireframes</h2>
+https://www.mockflow.com/app/#Wireframe
 
 <h2>APIs</h2>
 https://superheroapi.com/ids.html <br>
